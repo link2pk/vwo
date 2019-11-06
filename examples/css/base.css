@@ -58,7 +58,7 @@ body {
     height: 100%;
     text-rendering: optimizeLegibility;
     /* 1 */
-    font-smoothing: antialiased;
+
     -webkit-font-smoothing: antialiased;
     /* 1 */
     -moz-osx-font-smoothing: grayscale;
@@ -180,10 +180,7 @@ textarea:focus {
 }
 
 /* custom utilities */
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box; */
+
 
 /* custom classes */
 

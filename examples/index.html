@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/atomic.css" />
   </head>
-  <body>
-    <main class="">
+  <body class="D(f)--lg Ai(c)--lg Jc(c)--lg">
+    <main class="D(f)--lg">
       <header
-        class=" W(350px)--lg Bgi(headerbg) Bgc(#5c0f80.7) Bgp(mobileBgPos) Bgz(585px) C(#fff) BgBlendModeMultiply P(1em) Cf"
+        class=" W(350px)--lg Bgi(headerbg) Bgc(#5c0f80.7) Bgp(mobileBgPos)--maxLg Bgz(585px)--xs Bgz(cv) C(#fff) BgBlendModeMultiply P(gutter) Cf"
       >
         <h2 class=" Fz(34px) Maw(402px)--maxLg Mx(a)--maxLg">
           Welcome back!
@@ -31,15 +31,26 @@
       </header>
       <form
         action=""
-        class="Maw(402px)--maxLg Mx(a)--maxLg W(410px)--lg P(1em)"
+        class="Maw(402px)--maxLg Mx(a)--maxLg W(290px)--lg  P(gutter) "
       >
         <h1 class="Fz(24px)">Create an account</h1>
         <div>
-          <label for="email" class="D(b)">Enter your email: </label>
-          <input type="email" name="email" id="email" required class="D(b)" />
+          <label for="email" class="D(b) My(formLblMargin)"
+            >Enter your email</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            class="D(b) Bdw(borderWidth) Bdc(borderColor) W(100%) H(inputHtMobile)--maxLg H(inputHtLg)--lg"
+          />
         </div>
         <div>
-          <label for="full_name" class="D(b)">Enter your name: </label>
+          <label for="full_name" class="D(b)  My(formLblMargin)"
+            >Enter your full name
+            <span class="Fz(11px)">(Optional)</span></label
+          >
           <input
             type="text"
             name="full_name"
@@ -47,6 +58,23 @@
             required
             class="D(b)"
           />
+        </div>
+        <div>
+          <label for="password" class="D(b)">Chosse a strong password</label>
+          <input id="password" name="password" type="password" class="D(b)" />
+        </div>
+        <div>
+          <label class="D(b)"
+            >Are you an agency or individual? (Optional)</label
+          >
+
+          <input type="radio" name="agency" id="individual" />
+          <label for="individual">Individual</label>
+          <input type="radio" name="agency" id="agency" />
+          <label for="agency">Agency</label>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
         </div>
       </form>
     </main>
