@@ -180,7 +180,64 @@ textarea:focus {
 }
 
 /* custom utilities */
+/* custom radio buttons */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
 
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    line-height: 19px;
+    display: inline-block;
+
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #bdbdbd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:checked+label:before {
+    border-color: #2D9CDB;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #2D9CDB;
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 1;
+
+    background: #F2F2F2;
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+
+}
 
 /* custom classes */
 

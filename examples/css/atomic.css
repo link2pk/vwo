@@ -4,23 +4,38 @@
 .Bdw\(borderWidth\) {
   border-width: 2px;
 }
+.Bdrs\(4px\) {
+  border-radius: 4px;
+}
+.Bg\(formColor\) {
+  background: #2D9CDB;
+}
+.Bg\(\#247daf\)\:h:hover {
+  background: #247daf;
+}
 .Bgi\(headerbg\) {
   background-image: url(../img/vwo.jpg);
 }
 .Bgc\(\#5c0f80\.7\) {
   background-color: rgba(92,15,128,.7);
 }
-.Bgc\(\#ccc\) {
-  background-color: #ccc;
-}
 .Bgc\(\#add8e6\) {
   background-color: #add8e6;
+}
+.Bgc\(\#ccc\) {
+  background-color: #ccc;
 }
 .Bgz\(cv\) {
   background-size: cover;
 }
+.C\(\#ffffff\) {
+  color: #ffffff;
+}
 .C\(\#fff\) {
   color: #fff;
+}
+.Cur\(p\)\:h:hover {
+  cursor: pointer;
 }
 .D\(b\) {
   display: block;
@@ -37,18 +52,42 @@
 .Fz\(11px\) {
   font-size: 11px;
 }
+.Fz\(14px\) {
+  font-size: 14px;
+}
+.Fz\(18px\) {
+  font-size: 18px;
+}
 .Fz\(24px\) {
   font-size: 24px;
 }
 .Fz\(34px\) {
   font-size: 34px;
 }
+.H\(44px\) {
+  height: 44px;
+}
 .My\(formLblMargin\) {
   margin-top: 14px;
   margin-bottom: 14px;
 }
+.Mt\(20px\) {
+  margin-top: 20px;
+}
+.Mend\(40px\) {
+  margin-right: 40px;
+}
+.Mb\(10px\) {
+  margin-bottom: 10px;
+}
+.Mb\(40px\) {
+  margin-bottom: 40px;
+}
 .P\(gutter\) {
   padding: 20px;
+}
+.Trs\(TrsBgc3sEase\) {
+  transition: background-color .3s ease;
 }
 .W\(1\/2\) {
   width: 50%;
@@ -58,6 +97,9 @@
 }
 .W\(100\%\) {
   width: 100%;
+}
+.W\(188px\) {
+  width: 188px;
 }
 .Cf:before, .Cf:after {
   content: " ";

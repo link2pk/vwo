@@ -12,8 +12,10 @@ module.exports = {
     inputHtMobile: "52px",
     inputHtLg: "37px",
     formLblMargin: "14px",
+    formColor: "#2D9CDB",
     gutter: {
       default: "20px"
-    }
+    },
+    TrsBgc3sEase: "background-color .3s ease"
   }
 };
