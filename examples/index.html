@@ -1,19 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset='utf-8'>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no,initial-scale=1,maximum-scale=1"
+    />
     <title>Atomizer examples</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/atomic.css">
-</head>
-<body>
-    <h1 class="Fw(b) Fz(30px)">Atomizer Examples</h1>
-    <p class="Bgc($primary)">Oh hey, hello! Feel free to make any changes to the markup of this page by using atomic CSS classes. It should immediately update your <a href="css/atomic.css">atomic.css</a> stylesheet.</p>
-    <ul>
-        <li><a href="grid.html">Grid</a></li>
-    <ul>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/atomic.css" />
+  </head>
+  <body>
+    <main class="">
+      <header
+        class=" W(350px)--lg Bgi(headerbg) Bgc(#5c0f80.7) Bgp(mobileBgPos) Bgz(585px) C(#fff) BgBlendModeMultiply P(1em) Cf"
+      >
+        <h2 class=" Fz(34px) Maw(402px)--maxLg Mx(a)--maxLg">
+          Welcome back!
+        </h2>
+        <p
+          class="Fw(500) Maw(402px)--maxLg Mx(a)--maxLg Mb(80px)--maxLg Mt(40px)--maxLg"
+        >
+          VWO makes for a really powerful platform that takes care of all our
+          conversion optimization requirements.
+        </p>
+      </header>
+      <form
+        action=""
+        class="Maw(402px)--maxLg Mx(a)--maxLg W(410px)--lg P(1em)"
+      >
+        <h1 class="Fz(24px)">Create an account</h1>
+        <div>
+          <label for="email" class="D(b)">Enter your email: </label>
+          <input type="email" name="email" id="email" required class="D(b)" />
+        </div>
+        <div>
+          <label for="full_name" class="D(b)">Enter your name: </label>
+          <input
+            type="text"
+            name="full_name"
+            id="full_name"
+            required
+            class="D(b)"
+          />
+        </div>
+      </form>
+    </main>
+    <script src="js/jquery.min.js"></script>
     <!-- this is just to reload the page if you make any changes to the html -->
     <script src="//localhost:35729/livereload.js"></script>
-</body>
+  </body>
 </html>
-
