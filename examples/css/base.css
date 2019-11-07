@@ -266,7 +266,7 @@ input.error {
 
     /* Body bg for desktop */
     body {
-        background: linear-gradient(161.5deg, #5A5096 54.5%, #FFFFFF 54.54%), #FFFFFF;
+        background: linear-gradient(161.5deg, #5A5096 59%, #FFFFFF 52.54%), #FFFFFF;
     }
 
     /* for custom radio button */
