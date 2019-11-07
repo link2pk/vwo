@@ -190,9 +190,8 @@ textarea:focus {
 [type="radio"]:checked+label,
 [type="radio"]:not(:checked)+label {
     position: relative;
-    padding-left: 26px;
     cursor: pointer;
-    line-height: 19px;
+
     display: inline-block;
 
 }
@@ -203,12 +202,14 @@ textarea:focus {
     position: absolute;
     left: 0;
     top: 0;
-    width: 15px;
-    height: 15px;
+
     border: 2px solid #bdbdbd;
-    border-radius: 100%;
+    border-radius: 50%;
     background: #fff;
 }
+
+
+
 
 [type="radio"]:checked+label:before {
     border-color: #2D9CDB;
@@ -217,30 +218,98 @@ textarea:focus {
 [type="radio"]:checked+label:after,
 [type="radio"]:not(:checked)+label:after {
     content: '';
-    width: 11px;
-    height: 11px;
-    background: #2D9CDB;
-
     position: absolute;
-    top: 4px;
-    left: 4px;
     border-radius: 50%;
-
 }
 
 [type="radio"]:not(:checked)+label:after {
-    opacity: 1;
 
     background: #F2F2F2;
 }
 
 [type="radio"]:checked+label:after {
-    opacity: 1;
 
+    background: #2D9CDB;
+}
+
+@media screen and (min-width: 900px) {
+
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        padding-left: 26px;
+        line-height: 19px;
+    }
+
+    [type="radio"]:checked+label:before,
+    [type="radio"]:not(:checked)+label:before {
+        width: 15px;
+        height: 15px;
+
+    }
+
+    [type="radio"]:checked+label:after,
+    [type="radio"]:not(:checked)+label:after {
+        top: 4px;
+        left: 4px;
+        width: 11px;
+        height: 11px;
+    }
+}
+
+@media screen and (max-width: 899.99px) {
+
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        padding-left: 34px;
+        line-height: 24px;
+    }
+
+    [type="radio"]:checked+label:before,
+    [type="radio"]:not(:checked)+label:before {
+        width: 21px;
+        height: 21px;
+
+    }
+
+    [type="radio"]:checked+label:after,
+    [type="radio"]:not(:checked)+label:after {
+        top: 5px;
+        left: 5px;
+        width: 15px;
+        height: 15px;
+    }
 }
 
 /* custom classes */
 
 .BgBlendModeMultiply {
     background-blend-mode: multiply;
+}
+
+/* form error styles */
+label.error {
+    /* remove the next line when you have trouble in IE6 with labels in list */
+    background-color: #EB5757;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+input.error {
+    border-color: #EB5757;
+}
+
+@media screen and (min-width: 900px) {
+    label.error {
+        padding: 3px 5px;
+    }
+}
+
+@media screen and (max-width: 899.99px) {
+    label.error {
+        padding: 6px 8px;
+    }
 }

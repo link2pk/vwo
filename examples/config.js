@@ -9,6 +9,7 @@ module.exports = {
     mobileBgPos: "bottom -240px center",
     borderWidth: "2px",
     borderColor: "#BDBDBD",
+    inputPadding: "14px",
     inputHtMobile: "52px",
     inputHtLg: "37px",
     formLblMargin: "14px",

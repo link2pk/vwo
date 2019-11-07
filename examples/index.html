@@ -32,6 +32,7 @@
       <form
         action=""
         class="Maw(402px)--maxLg Mx(a)--maxLg W(290px)--lg  P(gutter) "
+        id="signupForm"
       >
         <h1 class="Fz(24px) Mt(20px) Mb(40px)">Create an account</h1>
         <div>
@@ -43,7 +44,7 @@
             name="email"
             id="email"
             required
-            class="D(b) Bdw(borderWidth) Bdc(borderColor) W(100%) H(inputHtMobile)--maxLg H(inputHtLg)--lg"
+            class="D(b) Bdw(borderWidth) Bdc(borderColor) W(100%) H(inputHtMobile)--maxLg H(inputHtLg)--lg  P(inputPadding)"
           />
         </div>
         <div>
@@ -55,8 +56,7 @@
             type="text"
             name="full_name"
             id="full_name"
-            required
-            class="D(b) Bdw(borderWidth) Bdc(borderColor) W(100%) H(inputHtMobile)--maxLg H(inputHtLg)--lg"
+            class="D(b) Bdw(borderWidth) Bdc(borderColor) W(100%) H(inputHtMobile)--maxLg H(inputHtLg)--lg P(inputPadding)"
           />
         </div>
         <div>
@@ -67,20 +67,26 @@
             id="password"
             name="password"
             type="password"
-            class="D(b) Bdw(borderWidth) Bdc(borderColor) W(100%) H(inputHtMobile)--maxLg H(inputHtLg)--lg"
+            class="D(b) Bdw(borderWidth) Bdc(borderColor) W(100%) H(inputHtMobile)--maxLg H(inputHtLg)--lg P(inputPadding)"
+            required
           />
         </div>
         <div>
-          <label class="D(b) My(formLblMargin) Mb(10px)"
-            >Are you an agency or individual? (Optional)</label
+          <label class="D(b) My(formLblMargin) Mb(20px)--maxLg"
+            >Are you an agency or individual?
+            <span class="Fz(11px)">(Optional)</span></label
           >
 
-          <input type="radio" name="agency" id="individual" />
-          <label for="individual" class="Fz(14px) Mend(40px)">Individual</label>
+          <input type="radio" name="agency" id="individual" checked />
+          <label
+            for="individual"
+            class="Fz(14px) Mend(40px)--lg Mend(90px)--maxLg"
+            >Individual</label
+          >
           <input type="radio" name="agency" id="agency" />
           <label for="agency" class="Fz(14px)">Agency</label>
         </div>
-        <div class="Mt(20px) Mb(40px)">
+        <div class="Mt(20px)--lg Mt(40px)--maxLg Mb(40px)">
           <button
             type="submit"
             class="Fz(18px) Fw(500) C(#ffffff) Bg(formColor) Bg(#247daf):h Trs(TrsBgc3sEase)  Bdrs(4px) W(188px) H(44px) Cur(p):h"
