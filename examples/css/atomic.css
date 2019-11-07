@@ -28,11 +28,11 @@
 .Bgz\(cv\) {
   background-size: cover;
 }
-.C\(\#ffffff\) {
-  color: #ffffff;
-}
 .C\(\#fff\) {
   color: #fff;
+}
+.C\(\#ffffff\) {
+  color: #ffffff;
 }
 .Cur\(p\)\:h:hover {
   cursor: pointer;
@@ -98,16 +98,6 @@
 .W\(1\/2\) {
   width: 50%;
 }
-.Cf:before, .Cf:after {
-  content: " ";
-  display: table;
-}
-.Cf:after {
-  clear: both;
-}
-.Cf {
-  zoom: 1;
-}
 @media screen and (max-width: 585px) {
   .Bgz\(585px\)--xs {
     background-size: 585px;
@@ -115,7 +105,7 @@
 }
 @media screen and (max-width: 899.99px) {
   .Bgp\(mobileBgPos\)--maxLg {
-    background-position: bottom -240px center;
+    background-position: bottom -241px center;
   }
   .H\(inputHtMobile\)--maxLg {
     height: 52px;
@@ -141,6 +131,9 @@
   }
 }
 @media screen and (min-width: 900px) {
+  .Bgc\(\#ffffff\)--lg {
+    background-color: #ffffff;
+  }
   .D\(f\)--lg {
     display: flex;
   }

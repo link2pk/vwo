@@ -232,53 +232,9 @@ textarea:focus {
     background: #2D9CDB;
 }
 
-@media screen and (min-width: 900px) {
 
-    [type="radio"]:checked+label,
-    [type="radio"]:not(:checked)+label {
-        padding-left: 26px;
-        line-height: 19px;
-    }
 
-    [type="radio"]:checked+label:before,
-    [type="radio"]:not(:checked)+label:before {
-        width: 15px;
-        height: 15px;
 
-    }
-
-    [type="radio"]:checked+label:after,
-    [type="radio"]:not(:checked)+label:after {
-        top: 4px;
-        left: 4px;
-        width: 11px;
-        height: 11px;
-    }
-}
-
-@media screen and (max-width: 899.99px) {
-
-    [type="radio"]:checked+label,
-    [type="radio"]:not(:checked)+label {
-        padding-left: 34px;
-        line-height: 24px;
-    }
-
-    [type="radio"]:checked+label:before,
-    [type="radio"]:not(:checked)+label:before {
-        width: 21px;
-        height: 21px;
-
-    }
-
-    [type="radio"]:checked+label:after,
-    [type="radio"]:not(:checked)+label:after {
-        top: 5px;
-        left: 5px;
-        width: 15px;
-        height: 15px;
-    }
-}
 
 /* custom classes */
 
@@ -302,13 +258,70 @@ input.error {
     border-color: #EB5757;
 }
 
+
+
+
+/* Media queries */
 @media screen and (min-width: 900px) {
+
+    /* Body bg for desktop */
+    body {
+        background: linear-gradient(161.5deg, #5A5096 54.5%, #FFFFFF 54.54%), #FFFFFF;
+    }
+
+    /* for custom radio button */
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        padding-left: 26px;
+        line-height: 19px;
+    }
+
+    [type="radio"]:checked+label:before,
+    [type="radio"]:not(:checked)+label:before {
+        width: 15px;
+        height: 15px;
+
+    }
+
+    [type="radio"]:checked+label:after,
+    [type="radio"]:not(:checked)+label:after {
+        top: 4px;
+        left: 4px;
+        width: 11px;
+        height: 11px;
+    }
+
+    /* form label error */
     label.error {
         padding: 3px 5px;
     }
 }
 
 @media screen and (max-width: 899.99px) {
+
+    /* for custom radio button */
+    [type="radio"]:checked+label,
+    [type="radio"]:not(:checked)+label {
+        padding-left: 34px;
+        line-height: 24px;
+    }
+
+    [type="radio"]:checked+label:before,
+    [type="radio"]:not(:checked)+label:before {
+        width: 21px;
+        height: 21px;
+
+    }
+
+    [type="radio"]:checked+label:after,
+    [type="radio"]:not(:checked)+label:after {
+        top: 5px;
+        left: 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    /* form label error */
     label.error {
         padding: 6px 8px;
     }

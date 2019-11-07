@@ -6,7 +6,7 @@ module.exports = {
   },
   custom: {
     headerbg: "url(../img/vwo.jpg)",
-    mobileBgPos: "bottom -240px center",
+    mobileBgPos: "bottom -241px center",
     borderWidth: "2px",
     borderColor: "#BDBDBD",
     inputPadding: "14px",
