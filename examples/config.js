@@ -18,6 +18,7 @@ module.exports = {
     formLblMarginMobile: "14px",
     formLblMarginDesktop: "5px",
     formColor: "#2D9CDB",
+    btnColor: "#176896",
     paddingGutter: {
       default: "20px",
       lg: "20px 60px"

@@ -10,9 +10,9 @@ $.validator.addMethod(
 $.validator.addMethod(
   "alphanumeric",
   function(value, element) {
-    return this.optional(element) || /^\w+$/i.test(value);
+    return this.optional(element) || /^[a-zA-Z0-9 ]*$/i.test(value);
   },
-  "Letters, numbers, and underscores only please"
+  "Letters, numbers, and space only please"
 );
 
 //on jquery document ready
