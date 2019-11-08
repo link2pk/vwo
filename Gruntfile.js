@@ -39,7 +39,7 @@ module.exports = function(grunt) {
           livereload: true
         },
         files: ["./html/**/*.html", "./html/**/*.js", "./html/**/*.css"],
-        tasks: ["atomizer"]
+        tasks: ["atomizer", "postcss"]
       }
     },
 
