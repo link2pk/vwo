@@ -10,12 +10,12 @@ module.exports = function(grunt) {
       // basic
       dev: {
         options: {
-          configFile: "./examples/config.js"
+          configFile: "./html/config.js"
         },
         files: [
           {
-            src: ["./examples/**/*.html"],
-            dest: "./examples/css/atomic.css"
+            src: ["./html/**/*.html"],
+            dest: "./html/css/atomic.css"
           }
         ]
       }
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
       dev: {
         options: {
           port: 3000,
-          base: "examples",
+          base: "html",
           open: true
         }
       }
@@ -38,16 +38,28 @@ module.exports = function(grunt) {
         options: {
           livereload: true
         },
-        files: [
-          "./examples/**/*.html",
-          "./examples/**/*.js",
-          "./examples/**/*.css"
-        ],
+        files: ["./html/**/*.html", "./html/**/*.js", "./html/**/*.css"],
         tasks: ["atomizer"]
+      }
+    },
+
+    //post css autoprefixer
+    postcss: {
+      options: {
+        //map: true, // inline sourcemaps
+
+        processors: [
+          //require('pixrem')(), // add fallbacks for rem units
+          require("autoprefixer")({ browsers: ["last 8 versions", "ie 9"] }) // add vendor prefixes
+          //require('cssnano')() // minify the result
+        ]
+      },
+      dist: {
+        src: "./html/**/*.css"
       }
     }
   });
 
   // default task runs atomizer, start server and watch for changes
-  grunt.registerTask("default", ["atomizer", "connect", "watch"]);
+  grunt.registerTask("default", ["atomizer", "postcss", "connect", "watch"]);
 };

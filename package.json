@@ -1,8 +1,8 @@
 {
-  "name": "atomizer-examples",
+  "name": "vwo-signup-with-atomizer",
   "private": true,
   "version": "0.0.0",
-  "description": "Examples of Atomic CSS with Atomizer",
+  "description": "VWO signup html with Atomic CSS using Atomizer",
   "scripts": {
     "start": "./node_modules/.bin/grunt --gruntfile ./Gruntfile.js"
   },
@@ -36,14 +36,13 @@
   },
   "homepage": "https://acss.io/",
   "devDependencies": {
+    "autoprefixer": "^9.7.1",
     "grunt": "^0.4.5",
     "grunt-atomizer": "^3.0.0",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-connect": "^0.10.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-postcss": "^0.9.0",
-    "jquery": "^3.4.1",
-    "jquery-validation": "^1.19.1",
     "load-grunt-tasks": "^3.1.0"
   },
   "dependencies": {}
