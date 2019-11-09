@@ -39,7 +39,7 @@ module.exports = function(grunt) {
           livereload: true
         },
         files: ["./html/**/*.html", "./html/**/*.js", "./html/**/*.css"],
-        tasks: ["atomizer", "postcss"]
+        tasks: ["atomizer", "postcss", "uglify"]
       }
     },
 
@@ -57,9 +57,28 @@ module.exports = function(grunt) {
       dist: {
         src: "./html/**/*.css"
       }
+    },
+
+    //js uglify
+    uglify: {
+      my_target: {
+        files: {
+          "html/js/output.min.js": [
+            "html/js/jquery.min.js",
+            "html/js/jquery.validate.min.js",
+            "html/js/form-validation.js"
+          ]
+        }
+      }
     }
   });
 
   // default task runs atomizer, start server and watch for changes
-  grunt.registerTask("default", ["atomizer", "postcss", "connect", "watch"]);
+  grunt.registerTask("default", [
+    "atomizer",
+    "postcss",
+    "uglify",
+    "connect",
+    "watch"
+  ]);
 };
