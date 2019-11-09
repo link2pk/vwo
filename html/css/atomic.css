@@ -81,42 +81,42 @@
   }
 }
 @media screen and (max-width: 899.99px) {
-  .Bgz\(cv\)--maxLg {
+  .Bgz\(cv\)--maxSm {
     background-size: cover;
   }
-  .H\(inputHtMobile\)--maxLg {
+  .H\(inputHtMobile\)--maxSm {
     height: 52px;
   }
-  .Mx\(a\)--maxLg {
+  .Mx\(a\)--maxSm {
     margin-left: auto;
     margin-right: auto;
   }
-  .My\(formLblMarginMobile\)--maxLg {
+  .My\(formLblMarginMobile\)--maxSm {
     margin-top: 14px;
     margin-bottom: 14px;
   }
-  .Mt\(20px\)--maxLg {
+  .Mt\(20px\)--maxSm {
     margin-top: 20px;
   }
-  .Mt\(40px\)--maxLg {
+  .Mt\(40px\)--maxSm {
     margin-top: 40px;
   }
-  .Mend\(90px\)--maxLg {
+  .Mend\(90px\)--maxSm {
     margin-right: 90px;
   }
-  .Mb\(20px\)--maxLg {
+  .Mb\(20px\)--maxSm {
     margin-bottom: 20px;
   }
-  .Mb\(80px\)--maxLg {
+  .Mb\(80px\)--maxSm {
     margin-bottom: 80px;
   }
-  .Mb\(40px\)--maxLg {
+  .Mb\(40px\)--maxSm {
     margin-bottom: 40px;
   }
-  .Maw\(402px\)--maxLg {
+  .Maw\(402px\)--maxSm {
     max-width: 402px;
   }
-  .P\(20px\)--maxLg {
+  .P\(20px\)--maxSm {
     padding: 20px;
   }
 }
